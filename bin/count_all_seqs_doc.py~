@@ -5,7 +5,7 @@ import seq_utils2
 import sys
 
 def count_all_seqs(input_dir):
-        files = sorted(os.listdir(input_dir))
+        files = sorted(os.listdir(sys.argv[1]))
         os.chdir(input_dir)
 	for file in files:
 		filename = open(file)
